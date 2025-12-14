@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En Aktif Oyuncular - yugoslavko</title>
+    <link rel="stylesheet" href="../dashboard-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="navbar">
+            <a class="logo-container" href="../dashboard.html"><span class="logo-text">yugoslavko</span></a>
+            <div class="nav-menu-wrapper">
+                <nav class="nav-menu">
+                    <div class="nav-menu-item"><a class="nav-menu-link" href="../dashboard.html">ANASAYFA</a></div>
+                </nav>
+            </div>
+            <div class="right-nav"><a class="auth-button" href="../dashboard.html">KULLANICI PANELİ</a></div>
+        </header>
+
+        <main id="page-content">
+            <div class="panel-container">
+                <div class="usercp-content" style="max-width: 1200px; margin: 0 auto;">
+                    <h1>En Aktif Oyuncular</h1>
+
+                    <div class="panel-card">
+                        <h3>Son 7 Gün - En Aktif Oyuncular</h3>
+                        <table style="width: 100%; color: #ccc; border-collapse: collapse;">
+                            <thead>
+                                <tr style="border-bottom: 2px solid #444;">
+                                    <th style="padding: 1rem; text-align: left; color: #d4af37;">Sıra</th>
+                                    <th style="padding: 1rem; text-align: left; color: #d4af37;">Oyuncu</th>
+                                    <th style="padding: 1rem; text-align: center; color: #d4af37;">Online Süre</th>
+                                    <th style="padding: 1rem; text-align: center; color: #d4af37;">Seviye</th>
+                                    <th style="padding: 1rem; text-align: center; color: #d4af37;">Ulus</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid #333;">
+                                    <td style="padding: 1rem;">🥇 1</td>
+                                    <td style="padding: 1rem; font-weight: bold; color: #d4af37;">DeathWarrior</td>
+                                    <td style="padding: 1rem; text-align: center;">142 saat</td>
+                                    <td style="padding: 1rem; text-align: center;">83</td>
+                                    <td style="padding: 1rem; text-align: center;"><span
+                                            style="color: #ff4444;">Karus</span></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #333;">
+                                    <td style="padding: 1rem;">🥈 2</td>
+                                    <td style="padding: 1rem; font-weight: bold; color: #c0c0c0;">LightMage</td>
+                                    <td style="padding: 1rem; text-align: center;">138 saat</td>
+                                    <td style="padding: 1rem; text-align: center;">83</td>
+                                    <td style="padding: 1rem; text-align: center;"><span style="color: #4488ff;">El
+                                            Morad</span></td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #333;">
+                                    <td style="padding: 1rem;">🥉 3</td>
+                                    <td style="padding: 1rem; font-weight: bold; color: #cd7f32;">ShadowRogue</td>
+                                    <td style="padding: 1rem; text-align: center;">125 saat</td>
+                                    <td style="padding: 1rem; text-align: center;">83</td>
+                                    <td style="padding: 1rem; text-align: center;"><span
+                                            style="color: #ff4444;">Karus</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 yugoslavko. Tüm hakları saklıdır.</p>
+        </footer>
+    </div>
+
+    <div id="cookie-cleaner-container">
+        <style>
+            #cookie-cleaner-btn {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: linear-gradient(135deg, #8b0000, #500000);
+                color: #fff;
+                border: 1px solid #ff4444;
+                padding: 10px 15px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 12px;
+                font-weight: bold;
+                z-index: 9999;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+                transition: all 0.3s ease;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            #cookie-cleaner-btn:hover {
+                background: linear-gradient(135deg, #a00000, #700000);
+                transform: translateY(-2px);
+                box-shadow: 0 6px 15px rgba(255, 0, 0, 0.2);
+            }
+        </style>
+        <button id="cookie-cleaner-btn" onclick="clearAppData()"><i class="fas fa-trash-alt"></i> Çerezleri
+            Temizle</button>
+        <script>function clearAppData() { if (confirm('Tüm çerezler ve önbellek temizlenecek. Sayfa yenilenecek. Onaylıyor musunuz?')) { document.cookie.split(";").forEach(function (c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); }); localStorage.clear(); sessionStorage.clear(); window.location.reload(true); } }</script>
+    </div>
+</body>
+
+</html>

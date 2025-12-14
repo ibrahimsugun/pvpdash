@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krallık - yugoslavko</title>
+    <link rel="stylesheet" href="dashboard-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="navbar">
+            <a class="logo-container" href="dashboard.html"><span class="logo-text">yugoslavko</span></a>
+            <div class="nav-menu-wrapper">
+                <nav class="nav-menu">
+                    <div class="nav-menu-item"><a class="nav-menu-link" href="dashboard.html">ANASAYFA</a></div>
+                </nav>
+            </div>
+            <div class="right-nav"><a class="auth-button" href="dashboard.html">KULLANICI PANELİ</a></div>
+        </header>
+
+        <main id="page-content">
+            <div class="panel-container">
+                <div class="usercp-content" style="max-width: 1000px; margin: 0 auto;">
+                    <h1>Krallık Sistemi</h1>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
+                        <div class="panel-card" style="border: 2px solid #ff4444;">
+                            <div style="text-align: center; margin-bottom: 1.5rem;">
+                                <i class="fas fa-crown" style="font-size: 4rem; color: #ff4444;"></i>
+                                <h3 style="color: #ff4444; margin-top: 1rem;">Karus Kralı</h3>
+                            </div>
+                            <div style="text-align: center;">
+                                <h2 style="color: #d4af37; margin-bottom: 1rem;">DeathWarrior</h2>
+                                <p style="color: #ccc;">Klan: DeathClan</p>
+                                <p style="color: #999; margin-top: 1rem;">Krallık Süresi: 45 gün</p>
+                            </div>
+                        </div>
+
+                        <div class="panel-card" style="border: 2px solid #4488ff;">
+                            <div style="text-align: center; margin-bottom: 1.5rem;">
+                                <i class="fas fa-crown" style="font-size: 4rem; color: #4488ff;"></i>
+                                <h3 style="color: #4488ff; margin-top: 1rem;">El Morad Kralı</h3>
+                            </div>
+                            <div style="text-align: center;">
+                                <h2 style="color: #d4af37; margin-bottom: 1rem;">LightMage</h2>
+                                <p style="color: #ccc;">Klan: LightForce</p>
+                                <p style="color: #999; margin-top: 1rem;">Krallık Süresi: 32 gün</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-card" style="margin-bottom: 2rem;">
+                        <h3>Krallık Nedir?</h3>
+                        <p style="color: #ccc; line-height: 1.8;">
+                            Krallık sistemi, her ulusun en güçlü oyuncusunu kral olarak seçer. Kral, ulusuna özel
+                            bonuslar
+                            sağlar ve önemli kararlar alabilir. Krallık seçimleri her ay yapılır.
+                        </p>
+                    </div>
+
+                    <div class="panel-card">
+                        <h3>Kral Bonusları</h3>
+                        <ul style="color: #ccc; line-height: 2; list-style: none; padding: 0;">
+                            <li><i class="fa fa-check" style="color: #d4af37; margin-right: 10px;"></i> Tüm ulusa %5 EXP
+                                bonusu</li>
+                            <li><i class="fa fa-check" style="color: #d4af37; margin-right: 10px;"></i> Özel kral tahtı
+                                ve taç</li>
+                            <li><i class="fa fa-check" style="color: #d4af37; margin-right: 10px;"></i> Ulus sohbet
+                                kanalında özel yetki</li>
+                            <li><i class="fa fa-check" style="color: #d4af37; margin-right: 10px;"></i> Kale Savaşı'nda
+                                komuta yetkisi</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 yugoslavko. Tüm hakları saklıdır.</p>
+        </footer>
+    </div>
+
+    <div id="cookie-cleaner-container">
+        <style>
+            #cookie-cleaner-btn {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: linear-gradient(135deg, #8b0000, #500000);
+                color: #fff;
+                border: 1px solid #ff4444;
+                padding: 10px 15px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 12px;
+                font-weight: bold;
+                z-index: 9999;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+                transition: all 0.3s ease;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            #cookie-cleaner-btn:hover {
+                background: linear-gradient(135deg, #a00000, #700000);
+                transform: translateY(-2px);
+                box-shadow: 0 6px 15px rgba(255, 0, 0, 0.2);
+            }
+        </style>
+        <button id="cookie-cleaner-btn" onclick="clearAppData()"><i class="fas fa-trash-alt"></i> Çerezleri
+            Temizle</button>
+        <script>function clearAppData() { if (confirm('Tüm çerezler ve önbellek temizlenecek. Sayfa yenilenecek. Onaylıyor musunuz?')) { document.cookie.split(";").forEach(function (c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); }); localStorage.clear(); sessionStorage.clear(); window.location.reload(true); } }</script>
+    </div>
+</body>
+
+</html>

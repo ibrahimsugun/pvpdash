@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etkinlikler - yugoslavko</title>
+    <link rel="stylesheet" href="dashboard-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="navbar">
+            <a class="logo-container" href="dashboard.html">
+                <span class="logo-text">yugoslavko</span>
+            </a>
+            <div class="nav-menu-wrapper">
+                <nav class="nav-menu">
+                    <div class="nav-menu-item">
+                        <a class="nav-menu-link" href="dashboard.html">ANASAYFA</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="right-nav">
+                <a class="auth-button" href="dashboard.html">KULLANICI PANELİ</a>
+            </div>
+        </header>
+
+        <main id="page-content">
+            <div class="panel-container">
+                <div class="usercp-content" style="max-width: 1200px; margin: 0 auto;">
+                    <h1>Etkinlik Takvimi</h1>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                        <!-- Kale Savaşı -->
+                        <div class="panel-card" style="border-left: 4px solid #d4af37;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <i class="fas fa-fort-awesome" style="font-size: 2.5rem; color: #d4af37;"></i>
+                                <div>
+                                    <h3 style="margin: 0; color: #d4af37;">Kale Savaşı (CSW)</h3>
+                                    <p style="color: #999; margin: 0.5rem 0 0 0;">Her Cuma 21:00</p>
+                                </div>
+                            </div>
+                            <p style="color: #ccc; line-height: 1.6;">
+                                Klanlar arası büyük savaş! Delos Kalesini ele geçirmek için mücadele edin.
+                                Kazanan klan 1 hafta boyunca özel bonuslar kazanır.
+                            </p>
+                            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #444;">
+                                <strong style="color: #d4af37;">Ödüller:</strong>
+                                <ul style="color: #ccc; margin-top: 0.5rem; padding-left: 1.5rem;">
+                                    <li>Klan Hazinesi: 50,000 Coin</li>
+                                    <li>Özel Klan Pelerini</li>
+                                    <li>%10 Klan EXP Bonusu</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Hafta Sonu Bonusu -->
+                        <div class="panel-card" style="border-left: 4px solid #4CAF50;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <i class="fas fa-calendar-week" style="font-size: 2.5rem; color: #4CAF50;"></i>
+                                <div>
+                                    <h3 style="margin: 0; color: #4CAF50;">Hafta Sonu Bonusu</h3>
+                                    <p style="color: #999; margin: 0.5rem 0 0 0;">Cumartesi-Pazar</p>
+                                </div>
+                            </div>
+                            <p style="color: #ccc; line-height: 1.6;">
+                                Hafta sonu boyunca tüm sunucularda özel bonuslar aktif! Daha hızlı seviye atlayın
+                                ve daha fazla eşya kazanın.
+                            </p>
+                            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #444;">
+                                <strong style="color: #4CAF50;">Bonuslar:</strong>
+                                <ul style="color: #ccc; margin-top: 0.5rem; padding-left: 1.5rem;">
+                                    <li>%100 EXP Bonusu</li>
+                                    <li>%50 Drop Bonusu</li>
+                                    <li>%25 NP Bonusu</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Dünya Boss'u -->
+                        <div class="panel-card" style="border-left: 4px solid #f44336;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <i class="fas fa-dragon" style="font-size: 2.5rem; color: #f44336;"></i>
+                                <div>
+                                    <h3 style="margin: 0; color: #f44336;">Dünya Boss'u</h3>
+                                    <p style="color: #999; margin: 0.5rem 0 0 0;">Her Gün 19:00 & 22:00</p>
+                                </div>
+                            </div>
+                            <p style="color: #ccc; line-height: 1.6;">
+                                Güçlü dünya boss'ları belirir! Tüm oyuncular birleşerek bu devasa yaratıkları
+                                yenmeli ve değerli ödülleri kazanmalıdır.
+                            </p>
+                            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #444;">
+                                <strong style="color: #f44336;">Boss'lar:</strong>
+                                <ul style="color: #ccc; margin-top: 0.5rem; padding-left: 1.5rem;">
+                                    <li>Gorgoth (Lv. 80)</li>
+                                    <li>Bone Dragon (Lv. 82)</li>
+                                    <li>Dark Knight (Lv. 83)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Happy Hour -->
+                        <div class="panel-card" style="border-left: 4px solid #FF9800;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <i class="fas fa-clock" style="font-size: 2.5rem; color: #FF9800;"></i>
+                                <div>
+                                    <h3 style="margin: 0; color: #FF9800;">Happy Hour</h3>
+                                    <p style="color: #999; margin: 0.5rem 0 0 0;">Her Gün 20:00-21:00</p>
+                                </div>
+                            </div>
+                            <p style="color: #ccc; line-height: 1.6;">
+                                1 saat boyunca özel bonuslar! Bu saatte online olun ve maksimum verim alın.
+                            </p>
+                            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #444;">
+                                <strong style="color: #FF9800;">Bonuslar:</strong>
+                                <ul style="color: #ccc; margin-top: 0.5rem; padding-left: 1.5rem;">
+                                    <li>%200 EXP</li>
+                                    <li>%100 Drop</li>
+                                    <li>%50 NP</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- PvP Turnuvası -->
+                        <div class="panel-card" style="border-left: 4px solid #9C27B0;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <i class="fas fa-trophy" style="font-size: 2.5rem; color: #9C27B0;"></i>
+                                <div>
+                                    <h3 style="margin: 0; color: #9C27B0;">PvP Turnuvası</h3>
+                                    <p style="color: #999; margin: 0.5rem 0 0 0;">Her Pazar 20:00</p>
+                                </div>
+                            </div>
+                            <p style="color: #ccc; line-height: 1.6;">
+                                1v1 PvP turnuvası! En güçlü savaşçıyı belirlemek için arena'da mücadele edin.
+                            </p>
+                            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #444;">
+                                <strong style="color: #9C27B0;">Ödüller:</strong>
+                                <ul style="color: #ccc; margin-top: 0.5rem; padding-left: 1.5rem;">
+                                    <li>1. 10,000 KC</li>
+                                    <li>2. 5,000 KC</li>
+                                    <li>3. 2,500 KC</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Özel Etkinlik -->
+                        <div class="panel-card" style="border-left: 4px solid #00BCD4;">
+                            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;">
+                                <i class="fas fa-gift" style="font-size: 2.5rem; color: #00BCD4;"></i>
+                                <div>
+                                    <h3 style="margin: 0; color: #00BCD4;">Özel Etkinlikler</h3>
+                                    <p style="color: #999; margin: 0.5rem 0 0 0;">Duyurulacak</p>
+                                </div>
+                            </div>
+                            <p style="color: #ccc; line-height: 1.6;">
+                                Özel günlerde ve bayramlarda sürpriz etkinlikler düzenliyoruz! Discord ve
+                                forum'dan duyuruları takip edin.
+                            </p>
+                            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #444;">
+                                <strong style="color: #00BCD4;">Geçmiş Etkinlikler:</strong>
+                                <ul style="color: #ccc; margin-top: 0.5rem; padding-left: 1.5rem;">
+                                    <li>Yılbaşı Özel</li>
+                                    <li>Ramazan Etkinliği</li>
+                                    <li>Sunucu Yıldönümü</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 yugoslavko. Tüm hakları saklıdır.</p>
+        </footer>
+    </div>
+
+    <div id="cookie-cleaner-container">
+        <style>
+            #cookie-cleaner-btn {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: linear-gradient(135deg, #8b0000, #500000);
+                color: #fff;
+                border: 1px solid #ff4444;
+                padding: 10px 15px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 12px;
+                font-weight: bold;
+                z-index: 9999;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+                transition: all 0.3s ease;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            #cookie-cleaner-btn:hover {
+                background: linear-gradient(135deg, #a00000, #700000);
+                transform: translateY(-2px);
+                box-shadow: 0 6px 15px rgba(255, 0, 0, 0.2);
+            }
+        </style>
+        <button id="cookie-cleaner-btn" onclick="clearAppData()">
+            <i class="fas fa-trash-alt"></i> Çerezleri Temizle
+        </button>
+        <script>
+            function clearAppData() {
+                if (confirm('Tüm çerezler ve önbellek temizlenecek. Sayfa yenilenecek. Onaylıyor musunuz?')) {
+                    document.cookie.split(";").forEach(function (c) {
+                        document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+                    });
+                    localStorage.clear();
+                    sessionStorage.clear();
+                    window.location.reload(true);
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Başlangıç Rehberi - yugoslavko</title>
+    <link rel="stylesheet" href="../dashboard-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="navbar">
+            <a class="logo-container" href="../dashboard.html">
+                <span class="logo-text">yugoslavko</span>
+            </a>
+            <div class="nav-menu-wrapper">
+                <nav class="nav-menu">
+                    <div class="nav-menu-item">
+                        <a class="nav-menu-link" href="../dashboard.html">ANASAYFA</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="right-nav">
+                <a class="auth-button" href="../dashboard.html">KULLANICI PANELİ</a>
+            </div>
+        </header>
+
+        <main id="page-content">
+            <div class="panel-container">
+                <div class="usercp-content" style="max-width: 1000px; margin: 0 auto;">
+                    <h1>Başlangıç Eşyaları</h1>
+
+                    <div class="panel-card" style="margin-bottom: 2rem;">
+                        <h3>Yeni Başlayanlar İçin</h3>
+                        <p style="color: #ccc; line-height: 1.8; margin-bottom: 1rem;">
+                            yugoslavko'ya hoş geldiniz! Oyuna başladığınızda karakteriniz otomatik olarak başlangıç
+                            ekipmanları ile donatılacaktır. Bu rehber, size verilen eşyaları ve nasıl kullanacağınızı
+                            açıklamaktadır.
+                        </p>
+                    </div>
+
+                    <div class="panel-card" style="margin-bottom: 2rem;">
+                        <h3>Başlangıç Ekipmanları</h3>
+                        <ul class="info-list">
+                            <li><span>Silah</span><span>+8 Başlangıç Silahı (Sınıfa Özel)</span></li>
+                            <li><span>Zırh Seti</span><span>+8 Başlangıç Zırhları (Kask, Zırh, Eldiven, Ayakkabı)</span>
+                            </li>
+                            <li><span>Aksesuar</span><span>+3 Başlangıç Küpe ve Kolye</span></li>
+                            <li><span>Potlar</span><span>1000x HP Pot, 1000x MP Pot</span></li>
+                            <li><span>Scroll Paketi</span><span>Temel Scroll Paketi (Attack, Defense vb.)</span></li>
+                            <li><span>Premium</span><span>3 Günlük Deneme Premium</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="panel-card" style="margin-bottom: 2rem;">
+                        <h3>İlk Adımlar</h3>
+                        <ol style="color: #ccc; line-height: 2; padding-left: 20px;">
+                            <li>Moradon'da başlayacaksınız. İlk olarak envanter düzeninizi yapın.</li>
+                            <li>Başlangıç NPC'lerinden görevleri alın ve tamamlayın.</li>
+                            <li>Seviye 10'a kadar Moradon çevresindeki canavarları avlayın.</li>
+                            <li>Seviye 10'dan sonra Eslant veya Karus bölgelerine geçin.</li>
+                            <li>Seviye 35'e kadar solo farm yapabilir veya party kurabilirsiniz.</li>
+                            <li>Seviye 35+ için Ronark Land'e geçiş yapın.</li>
+                        </ol>
+                    </div>
+
+                    <div class="panel-card">
+                        <h3>Önemli İpuçları</h3>
+                        <ul style="color: #ccc; line-height: 2; list-style: none; padding: 0;">
+                            <li><i class="fa fa-lightbulb" style="color: #d4af37; margin-right: 10px;"></i> Potlarınızı
+                                her zaman yanınızda bulundurun</li>
+                            <li><i class="fa fa-lightbulb" style="color: #d4af37; margin-right: 10px;"></i> Party kurmak
+                                daha hızlı seviye atlamanızı sağlar</li>
+                            <li><i class="fa fa-lightbulb" style="color: #d4af37; margin-right: 10px;"></i> Günlük
+                                görevleri mutlaka yapın</li>
+                            <li><i class="fa fa-lightbulb" style="color: #d4af37; margin-right: 10px;"></i> Klan kurmak
+                                veya katılmak oyun deneyiminizi artırır</li>
+                            <li><i class="fa fa-lightbulb" style="color: #d4af37; margin-right: 10px;"></i> Premium
+                                kullanımı seviye atlamayı hızlandırır</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 yugoslavko. Tüm hakları saklıdır.</p>
+        </footer>
+    </div>
+
+    <div id="cookie-cleaner-container">
+        <style>
+            #cookie-cleaner-btn {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: linear-gradient(135deg, #8b0000, #500000);
+                color: #fff;
+                border: 1px solid #ff4444;
+                padding: 10px 15px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 12px;
+                font-weight: bold;
+                z-index: 9999;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+                transition: all 0.3s ease;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            #cookie-cleaner-btn:hover {
+                background: linear-gradient(135deg, #a00000, #700000);
+                transform: translateY(-2px);
+                box-shadow: 0 6px 15px rgba(255, 0, 0, 0.2);
+            }
+        </style>
+        <button id="cookie-cleaner-btn" onclick="clearAppData()">
+            <i class="fas fa-trash-alt"></i> Çerezleri Temizle
+        </button>
+        <script>
+            function clearAppData() {
+                if (confirm('Tüm çerezler ve önbellek temizlenecek. Sayfa yenilenecek. Onaylıyor musunuz?')) {
+                    document.cookie.split(";").forEach(function (c) {
+                        document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+                    });
+                    localStorage.clear();
+                    sessionStorage.clear();
+                    window.location.reload(true);
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    /* Dış boşluk siyah */
+    font-family: 'Times New Roman', serif;
+}
+
+.game-container {
+    position: relative;
+    width: 1024px;
+    height: 768px;
+    background-color: #222;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    /* Arkaplan resmi artık ::before ile yönetiliyor */
+}
+
+/* Arkaplan görseli için layer - %80 transparan (0.2 opacity) */
+.game-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    /* %80 transparan */
+    z-index: 1;
+    transition: background-image 0.5s ease-in-out;
+}
+
+.login-box {
+    position: absolute;
+    /* Resimdeki konuma göre optimize edilmiş pozisyon */
+    top: 32%;
+    left: 60%;
+    width: 220px;
+    height: 340px;
+
+    /* Panel Çerçevesi Stili */
+    background: linear-gradient(to bottom, #2a2a2a, #1a1a1a);
+    border: 2px solid #666;
+    border-top-color: #888;
+    border-left-color: #888;
+    border-bottom-color: #333;
+    border-right-color: #333;
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* İç gölge ve detay */
+    box-shadow:
+        inset 1px 1px 0 #aaa,
+        inset -1px -1px 0 #000,
+        0 10px 20px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+/* Panel içindeki dekoratif çerçeve efekti (köşeler için) */
+.login-box::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    border: 2px solid #444;
+    pointer-events: none;
+}
+
+.login-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    z-index: 2;
+    position: relative;
+    /* z-index'in çalışması için relative gerekli */
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.input-group label {
+    display: block;
+    color: #a00000;
+    /* KO kırmızısı */
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 2px;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 1px;
+}
+
+.input-group input {
+    width: 90%;
+    height: 25px;
+    background-color: #000;
+    border: 1px solid #555;
+    border-top-color: #333;
+    border-left-color: #333;
+    border-bottom-color: #777;
+    border-right-color: #777;
+    color: #fff;
+    padding: 0 5px;
+    font-family: sans-serif;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #888;
+}
+
+.button-container {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    /* Butonlar arası boşluk */
+}
+
+.btn {
+    width: 90%;
+    height: 28px;
+    cursor: pointer;
+    font-family: 'Times New Roman', serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #111;
+
+    /* Daha soft, ama yine de metalik hissi veren geçişler */
+    background: linear-gradient(to bottom, #e4e4e4 0%, #b0b0b0 50%, #808080 51%, #a8a8a8 100%);
+    border: 1px solid #333;
+
+    /* Hafif yuvarlak köşe */
+    border-radius: 3px;
+
+    /* Daha yumuşak gölgeler */
+    box-shadow:
+        inset 1px 1px 1px rgba(255, 255, 255, 0.6),
+        inset -1px -1px 1px rgba(0, 0, 0, 0.1),
+        0 2px 4px rgba(0, 0, 0, 0.3);
+
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+
+    /* Hover geçişinin soft olması için transition */
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    /* Görseldeki gibi koyu/basılı efekt */
+    color: #fff;
+    background: linear-gradient(to bottom, #5a5a5a 0%, #2b2b2b 50%, #1a1a1a 51%, #3a3a3a 100%);
+    border-color: #000;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    box-shadow:
+        inset 0 0 5px rgba(0, 0, 0, 0.8),
+        0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.btn:active {
+    transform: translateY(1px);
+    background: linear-gradient(to bottom, #1a1a1a 0%, #000 50%, #1a1a1a 100%);
+}
+
+.btn.ok-btn {
+    margin-bottom: 5px;
+}

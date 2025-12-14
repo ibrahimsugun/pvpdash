@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narki Sistemi - yugoslavko</title>
+    <link rel="stylesheet" href="../dashboard-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="navbar">
+            <a class="logo-container" href="../dashboard.html"><span class="logo-text">yugoslavko</span></a>
+            <div class="nav-menu-wrapper">
+                <nav class="nav-menu">
+                    <div class="nav-menu-item"><a class="nav-menu-link" href="../dashboard.html">ANASAYFA</a></div>
+                </nav>
+            </div>
+            <div class="right-nav"><a class="auth-button" href="../dashboard.html">KULLANICI PANELİ</a></div>
+        </header>
+
+        <main id="page-content">
+            <div class="panel-container">
+                <div class="usercp-content" style="max-width: 1000px; margin: 0 auto;">
+                    <h1>Narki Sistemi</h1>
+
+                    <div class="panel-card" style="margin-bottom: 2rem;">
+                        <h3>Narki Nedir?</h3>
+                        <p style="color: #ccc; line-height: 1.8;">
+                            Narki, eşyalarınızı rastgele özelliklerle güçlendirmenizi sağlayan bir sistemdir.
+                            Moradon'daki
+                            Narki NPC'sine giderek eşyalarınıza ekstra bonuslar ekleyebilirsiniz.
+                        </p>
+                    </div>
+
+                    <div class="panel-card" style="margin-bottom: 2rem;">
+                        <h3>Narki Bonusları</h3>
+                        <ul style="color: #ccc; line-height: 2; padding-left: 1.5rem;">
+                            <li>+HP / +MP</li>
+                            <li>+Attack Power / +Magic Power</li>
+                            <li>+Defense / +Magic Defense</li>
+                            <li>+Critical Rate</li>
+                            <li>+Evasion</li>
+                        </ul>
+                    </div>
+
+                    <div class="panel-card">
+                        <h3>Önemli Bilgiler</h3>
+                        <ul style="color: #ccc; line-height: 2; list-style: none; padding: 0;">
+                            <li><i class="fa fa-info-circle" style="color: #d4af37; margin-right: 10px;"></i> Her eşyaya
+                                maksimum 3 narki uygulanabilir</li>
+                            <li><i class="fa fa-info-circle" style="color: #d4af37; margin-right: 10px;"></i> Bonuslar
+                                rastgele belirlenir</li>
+                            <li><i class="fa fa-info-circle" style="color: #d4af37; margin-right: 10px;"></i> Narki
+                                maliyeti eşya seviyesine göre değişir</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2025 yugoslavko. Tüm hakları saklıdır.</p>
+        </footer>
+    </div>
+
+    <div id="cookie-cleaner-container">
+        <style>
+            #cookie-cleaner-btn {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: linear-gradient(135deg, #8b0000, #500000);
+                color: #fff;
+                border: 1px solid #ff4444;
+                padding: 10px 15px;
+                border-radius: 8px;
+                cursor: pointer;
+                font-size: 12px;
+                font-weight: bold;
+                z-index: 9999;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+                transition: all 0.3s ease;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            }
+
+            #cookie-cleaner-btn:hover {
+                background: linear-gradient(135deg, #a00000, #700000);
+                transform: translateY(-2px);
+                box-shadow: 0 6px 15px rgba(255, 0, 0, 0.2);
+            }
+        </style>
+        <button id="cookie-cleaner-btn" onclick="clearAppData()"><i class="fas fa-trash-alt"></i> Çerezleri
+            Temizle</button>
+        <script>function clearAppData() { if (confirm('Tüm çerezler ve önbellek temizlenecek. Sayfa yenilenecek. Onaylıyor musunuz?')) { document.cookie.split(";").forEach(function (c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); }); localStorage.clear(); sessionStorage.clear(); window.location.reload(true); } }</script>
+    </div>
+</body>
+
+</html>
